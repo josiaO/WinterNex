@@ -1,0 +1,96 @@
+# See https://help.github.com/articles/ignoring-files/
+
+# --- Dependencies ---
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# --- Build & output ---
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# --- Testing & coverage ---
+coverage/
+.nyc_output/
+*.lcov
+
+# --- Environment & secrets (keep *.example committed) ---
+.env*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+!*.key.example
+
+# --- Logs & local scratch ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dev.log
+dev.out.log
+server.log
+local-*
+
+# --- Python (Django / scripts / backend) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+.hypothesis/
+db.sqlite3
+db.sqlite3-journal
+
+# --- Prisma ---
+prisma/*.db
+prisma/*.db-journal
+
+# --- Tools & deploy ---
+.vercel/
+.turbo/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# --- IDE & editors ---
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Misc (local AI / agent config) ---
+.claude/
+.z-ai-config/
+
+# --- Project-specific ---
+/skills/
